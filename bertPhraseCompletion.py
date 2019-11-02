@@ -1,11 +1,11 @@
 # Import required libraries
 import torch
-from pytorch_transformers import GPT2Tokenizer, GPT2LMHeadModel
+from transformers import BertTokenizer, BertModel
 import sys
 import difflib
 
 # Load pre-trained model tokenizer (vocabulary)
-tokenizer = GPT2Tokenizer.from_pretrained('gpt2')
+tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
 
 # Encode text input
 text = sys.argv[1]
@@ -15,7 +15,7 @@ indexed_tokens = tokenizer.encode(text)
 tokens_tensor = torch.tensor([indexed_tokens])
 
 # Load pre-trained model (weights)
-model = GPT2LMHeadModel.from_pretrained('gpt2')
+model = BertModel.from_pretrained('bert-base-uncased')
 
 # Set the model in evaluation mode to deactivate the DropOut modules
 model.eval()
