@@ -1,0 +1,628 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0397AC475F344BDCCF29E679 /* Pods_gro_2019.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC53256546CBCE327D636FB4 /* Pods_gro_2019.framework */; };
+		8F56C65A236C9F6F0093FEFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F56C659236C9F6F0093FEFE /* AppDelegate.swift */; };
+		8F56C65C236C9F6F0093FEFE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F56C65B236C9F6F0093FEFE /* SceneDelegate.swift */; };
+		8F56C65E236C9F6F0093FEFE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F56C65D236C9F6F0093FEFE /* ViewController.swift */; };
+		8F56C663236C9F710093FEFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F56C662236C9F710093FEFE /* Assets.xcassets */; };
+		8F56C666236C9F710093FEFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F56C664236C9F710093FEFE /* LaunchScreen.storyboard */; };
+		8F90CA71236E145100A5B47C /* ListenerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F90CA6F236E119500A5B47C /* ListenerViewController.swift */; };
+		8F90CA72236E2A2F00A5B47C /* SpeechHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F90CA6D236E07FE00A5B47C /* SpeechHelper.swift */; };
+		8F90CA74236E2CA300A5B47C /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F90CA73236E2CA300A5B47C /* UIViewControllerExtension.swift */; };
+		8FCDBEAC236CFE9600D26F75 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FCDBEAB236CFE9600D26F75 /* KeyboardViewController.swift */; };
+		8FCDBEB0236CFE9600D26F75 /* Helper Keyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8FCDBEA9236CFE9600D26F75 /* Helper Keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8FCDBEB6236D053500D26F75 /* KeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FCDBEB5236D053500D26F75 /* KeyboardView.xib */; };
+		8FFC149A236E389900AF207A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FFC1499236E389900AF207A /* Main.storyboard */; };
+		AD5E7FC95B4FE0186919B844 /* Pods_Helper_Keyboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F60D26DCF5006040A0F9441 /* Pods_Helper_Keyboard.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8FCDBEAE236CFE9600D26F75 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F56C64E236C9F6F0093FEFE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8FCDBEA8236CFE9600D26F75;
+			remoteInfo = "Helper Keyboard";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8FCDBEB4236CFE9600D26F75 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8FCDBEB0236CFE9600D26F75 /* Helper Keyboard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		159C17FFC1526A91162D6F24 /* Pods-gro-2019.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gro-2019.release.xcconfig"; path = "Target Support Files/Pods-gro-2019/Pods-gro-2019.release.xcconfig"; sourceTree = "<group>"; };
+		1843AE7B41975F3E771305FA /* Pods-Helper Keyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Helper Keyboard.debug.xcconfig"; path = "Target Support Files/Pods-Helper Keyboard/Pods-Helper Keyboard.debug.xcconfig"; sourceTree = "<group>"; };
+		268CBC7119210BFD5F06318B /* Pods-Helper Keyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Helper Keyboard.release.xcconfig"; path = "Target Support Files/Pods-Helper Keyboard/Pods-Helper Keyboard.release.xcconfig"; sourceTree = "<group>"; };
+		8F56C656236C9F6F0093FEFE /* gro-2019.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "gro-2019.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F56C659236C9F6F0093FEFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8F56C65B236C9F6F0093FEFE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8F56C65D236C9F6F0093FEFE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8F56C662236C9F710093FEFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8F56C665236C9F710093FEFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8F56C667236C9F710093FEFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F60D26DCF5006040A0F9441 /* Pods_Helper_Keyboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Helper_Keyboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F90CA6D236E07FE00A5B47C /* SpeechHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechHelper.swift; sourceTree = "<group>"; };
+		8F90CA6F236E119500A5B47C /* ListenerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListenerViewController.swift; sourceTree = "<group>"; };
+		8F90CA73236E2CA300A5B47C /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		8FCDBEA9236CFE9600D26F75 /* Helper Keyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Helper Keyboard.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8FCDBEAB236CFE9600D26F75 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		8FCDBEAD236CFE9600D26F75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FCDBEB5236D053500D26F75 /* KeyboardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KeyboardView.xib; sourceTree = "<group>"; };
+		8FFC1499236E389900AF207A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		DC53256546CBCE327D636FB4 /* Pods_gro_2019.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gro_2019.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4C6E0CE980DA76FCE264BF8 /* Pods-gro-2019.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gro-2019.debug.xcconfig"; path = "Target Support Files/Pods-gro-2019/Pods-gro-2019.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8F56C653236C9F6F0093FEFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0397AC475F344BDCCF29E679 /* Pods_gro_2019.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FCDBEA6236CFE9600D26F75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD5E7FC95B4FE0186919B844 /* Pods_Helper_Keyboard.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4F0BD9425092A265CFFBCD69 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1843AE7B41975F3E771305FA /* Pods-Helper Keyboard.debug.xcconfig */,
+				268CBC7119210BFD5F06318B /* Pods-Helper Keyboard.release.xcconfig */,
+				E4C6E0CE980DA76FCE264BF8 /* Pods-gro-2019.debug.xcconfig */,
+				159C17FFC1526A91162D6F24 /* Pods-gro-2019.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8F56C64D236C9F6F0093FEFE = {
+			isa = PBXGroup;
+			children = (
+				8F56C658236C9F6F0093FEFE /* gro-2019 */,
+				8FCDBEAA236CFE9600D26F75 /* Helper Keyboard */,
+				8F56C657236C9F6F0093FEFE /* Products */,
+				4F0BD9425092A265CFFBCD69 /* Pods */,
+				F127E61AC79036E00381BA17 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8F56C657236C9F6F0093FEFE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8F56C656236C9F6F0093FEFE /* gro-2019.app */,
+				8FCDBEA9236CFE9600D26F75 /* Helper Keyboard.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8F56C658236C9F6F0093FEFE /* gro-2019 */ = {
+			isa = PBXGroup;
+			children = (
+				8FFC1496236E363C00AF207A /* Classes */,
+				8FFC1495236E362900AF207A /* Extensions */,
+				8FFC1494236E360A00AF207A /* Other */,
+				8FFC1493236E35FA00AF207A /* View Controllers */,
+			);
+			path = "gro-2019";
+			sourceTree = "<group>";
+		};
+		8FCDBEAA236CFE9600D26F75 /* Helper Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				8FCDBEAD236CFE9600D26F75 /* Info.plist */,
+				8FCDBEB5236D053500D26F75 /* KeyboardView.xib */,
+				8FCDBEAB236CFE9600D26F75 /* KeyboardViewController.swift */,
+			);
+			path = "Helper Keyboard";
+			sourceTree = "<group>";
+		};
+		8FFC1493236E35FA00AF207A /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8F56C65D236C9F6F0093FEFE /* ViewController.swift */,
+				8F90CA6F236E119500A5B47C /* ListenerViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		8FFC1494236E360A00AF207A /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				8FFC1499236E389900AF207A /* Main.storyboard */,
+				8F56C662236C9F710093FEFE /* Assets.xcassets */,
+				8F56C659236C9F6F0093FEFE /* AppDelegate.swift */,
+				8F56C65B236C9F6F0093FEFE /* SceneDelegate.swift */,
+				8F56C664236C9F710093FEFE /* LaunchScreen.storyboard */,
+				8F56C667236C9F710093FEFE /* Info.plist */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		8FFC1495236E362900AF207A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8F90CA73236E2CA300A5B47C /* UIViewControllerExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8FFC1496236E363C00AF207A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8F90CA6D236E07FE00A5B47C /* SpeechHelper.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F127E61AC79036E00381BA17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8F60D26DCF5006040A0F9441 /* Pods_Helper_Keyboard.framework */,
+				DC53256546CBCE327D636FB4 /* Pods_gro_2019.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8F56C655236C9F6F0093FEFE /* gro-2019 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F56C66A236C9F710093FEFE /* Build configuration list for PBXNativeTarget "gro-2019" */;
+			buildPhases = (
+				75610B925EACCAC23CE4FACE /* [CP] Check Pods Manifest.lock */,
+				8F56C652236C9F6F0093FEFE /* Sources */,
+				8F56C653236C9F6F0093FEFE /* Frameworks */,
+				8F56C654236C9F6F0093FEFE /* Resources */,
+				8FCDBEB4236CFE9600D26F75 /* Embed App Extensions */,
+				0E952B64EE34A94B048D900E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8FCDBEAF236CFE9600D26F75 /* PBXTargetDependency */,
+			);
+			name = "gro-2019";
+			productName = "gro-2019";
+			productReference = 8F56C656236C9F6F0093FEFE /* gro-2019.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8FCDBEA8236CFE9600D26F75 /* Helper Keyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8FCDBEB1236CFE9600D26F75 /* Build configuration list for PBXNativeTarget "Helper Keyboard" */;
+			buildPhases = (
+				1A5B44AEC76BB75569FF8BC0 /* [CP] Check Pods Manifest.lock */,
+				8FCDBEA5236CFE9600D26F75 /* Sources */,
+				8FCDBEA6236CFE9600D26F75 /* Frameworks */,
+				8FCDBEA7236CFE9600D26F75 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Helper Keyboard";
+			productName = "Helper Keyboard";
+			productReference = 8FCDBEA9236CFE9600D26F75 /* Helper Keyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8F56C64E236C9F6F0093FEFE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "Victor Zhong";
+				TargetAttributes = {
+					8F56C655236C9F6F0093FEFE = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					8FCDBEA8236CFE9600D26F75 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+				};
+			};
+			buildConfigurationList = 8F56C651236C9F6F0093FEFE /* Build configuration list for PBXProject "gro-2019" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8F56C64D236C9F6F0093FEFE;
+			productRefGroup = 8F56C657236C9F6F0093FEFE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8F56C655236C9F6F0093FEFE /* gro-2019 */,
+				8FCDBEA8236CFE9600D26F75 /* Helper Keyboard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8F56C654236C9F6F0093FEFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FFC149A236E389900AF207A /* Main.storyboard in Resources */,
+				8F56C666236C9F710093FEFE /* LaunchScreen.storyboard in Resources */,
+				8F56C663236C9F710093FEFE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FCDBEA7236CFE9600D26F75 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FCDBEB6236D053500D26F75 /* KeyboardView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E952B64EE34A94B048D900E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-gro-2019/Pods-gro-2019-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-gro-2019/Pods-gro-2019-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-gro-2019/Pods-gro-2019-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1A5B44AEC76BB75569FF8BC0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Helper Keyboard-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75610B925EACCAC23CE4FACE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-gro-2019-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8F56C652236C9F6F0093FEFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F90CA71236E145100A5B47C /* ListenerViewController.swift in Sources */,
+				8F56C65E236C9F6F0093FEFE /* ViewController.swift in Sources */,
+				8F90CA74236E2CA300A5B47C /* UIViewControllerExtension.swift in Sources */,
+				8F56C65A236C9F6F0093FEFE /* AppDelegate.swift in Sources */,
+				8F90CA72236E2A2F00A5B47C /* SpeechHelper.swift in Sources */,
+				8F56C65C236C9F6F0093FEFE /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8FCDBEA5236CFE9600D26F75 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FCDBEAC236CFE9600D26F75 /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8FCDBEAF236CFE9600D26F75 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8FCDBEA8236CFE9600D26F75 /* Helper Keyboard */;
+			targetProxy = 8FCDBEAE236CFE9600D26F75 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8F56C664236C9F710093FEFE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8F56C665236C9F710093FEFE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8F56C668236C9F710093FEFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8F56C669236C9F710093FEFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8F56C66B236C9F710093FEFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4C6E0CE980DA76FCE264BF8 /* Pods-gro-2019.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = STXFK959QH;
+				INFOPLIST_FILE = "gro-2019/Other/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.victhewing.gro-2019";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8F56C66C236C9F710093FEFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 159C17FFC1526A91162D6F24 /* Pods-gro-2019.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = STXFK959QH;
+				INFOPLIST_FILE = "gro-2019/Other/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.victhewing.gro-2019";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8FCDBEB2236CFE9600D26F75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1843AE7B41975F3E771305FA /* Pods-Helper Keyboard.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = STXFK959QH;
+				INFOPLIST_FILE = "Helper Keyboard/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.victhewing.gro-2019.Helper-Keyboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8FCDBEB3236CFE9600D26F75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 268CBC7119210BFD5F06318B /* Pods-Helper Keyboard.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = STXFK959QH;
+				INFOPLIST_FILE = "Helper Keyboard/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.victhewing.gro-2019.Helper-Keyboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8F56C651236C9F6F0093FEFE /* Build configuration list for PBXProject "gro-2019" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F56C668236C9F710093FEFE /* Debug */,
+				8F56C669236C9F710093FEFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F56C66A236C9F710093FEFE /* Build configuration list for PBXNativeTarget "gro-2019" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F56C66B236C9F710093FEFE /* Debug */,
+				8F56C66C236C9F710093FEFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8FCDBEB1236CFE9600D26F75 /* Build configuration list for PBXNativeTarget "Helper Keyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8FCDBEB2236CFE9600D26F75 /* Debug */,
+				8FCDBEB3236CFE9600D26F75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8F56C64E236C9F6F0093FEFE /* Project object */;
+}

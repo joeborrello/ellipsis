@@ -34,7 +34,7 @@ def predict():
             
             # Load pre-trained model (weights)
             model = GPT2LMHeadModel.from_pretrained('https://storage.googleapis.com/allennlp/models/gpt2-345M-dump')
-            print(1)
+            #print(1)
             # Set the model in evaluation mode to deactivate the DropOut modules
             model.eval()
             
@@ -53,7 +53,7 @@ def predict():
 
             # Print the predicted word
             #print(predicted_text) #debugging
-            original_fragment = sys.argv[1]
+            original_fragment = text
             completed_phrase  = predicted_text
             output_list = [li for li in difflib.ndiff(original_fragment, completed_phrase) if li[0] != ' ']
             #print(output_list) #debugging
@@ -72,9 +72,5 @@ def predict():
     return text_return
 
 if __name__ == '__main__':
-     app.run(port='5002')
-
-
-
-
+    app.run(host= '157.245.196.85', port=5002, debug=False)
 

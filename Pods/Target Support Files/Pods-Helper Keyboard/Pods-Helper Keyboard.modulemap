@@ -1,0 +1,6 @@
+framework module Pods_Helper_Keyboard {
+  umbrella header "Pods-Helper Keyboard-umbrella.h"
+
+  export *
+  module * { export * }
+}
