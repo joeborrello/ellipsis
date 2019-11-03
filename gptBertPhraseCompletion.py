@@ -39,8 +39,18 @@ predicted_index = torch.argmax(predictions[0, -1, :]).item()
 predicted_text = tokenizer.decode(indexed_tokens + [predicted_index])
 
 # Print the predicted word
-print(predicted_text)
+#print(predicted_text) #debugging
 original_fragment = sys.argv[1]
 completed_phrase  = predicted_text
 output_list = [li for li in difflib.ndiff(original_fragment, completed_phrase) if li[0] != ' ']
-print(output_list)
+#print(output_list) #debugging
+output_list = [s.replace('+','') for s in output_list[1:]]
+#print(output_list) #debugging
+output_word = ""
+for x in output_list:
+    output_word += x
+#print(output_word)
+#output_word = output_word.strip(" ")
+#print(output_word)
+output_word = output_word.replace(" ","")
+print(output_word)
