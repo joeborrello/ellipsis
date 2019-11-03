@@ -1,3 +1,5 @@
+![Ellipsis Logo](https://github.com/joeborrello/ummm/blob/master/DVlogoSmall.png)
+
 # Ellipsis
 
 ### Verbal auto-complete for monitoring neurodegeneration
