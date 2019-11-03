@@ -31,6 +31,10 @@ Input an incomplete sentence that will be autocompleted by Natural Language Proc
 
 - when the word is received by the iOS application it is spoken back to the user
 
+- Running the iOS app:
+
+- - Tap listen, tap record, speak, when you pause it makes the API request
+
 _Note: Running the full, mobile version of this app requires that the iOS app is loaded onto a mobile device (or mobile device simulator)_
 
 ---
