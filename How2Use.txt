@@ -1,1 +1,0 @@
-python -c "import speech_recog; print(speech_recog.transcribe('test_audio.wav'))
