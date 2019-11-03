@@ -7,6 +7,18 @@
 #### Built by Team GRO at the 2019 BCG Digital Ventures hackathon
 ---
 
+### Overview
+#### Usage
+When at a loss for words, initiate Ellipsis and say the incomplete sentence. A word to complete the sentence will be suggested.
+#### User Interface
+Converts audio speech to text and sent to a RESTful API for processing. Displays the returned suggested word.
+#### RESTful API
+#### POST
+Type: ‘string’
+Input an incomplete sentence that will be autocompleted by Natural Language Processing with the GPT2 model. Returns the suggested word.
+
+---
+
 ## How to run
 
 - Run `minimalRESTAPI.py` to start autocomplete server
@@ -35,3 +47,12 @@ _Note: Running the full, mobile version of this app requires that the iOS app is
 ## Dependencies
 
 - As best as possible, running pip install -r requirements.txt will install all required dependencies on a system
+
+---
+## Team
+Built by Team GRO at the 2019 BCG Digital Ventures hackathon
+Joe Borello: Algorithm developer
+Taylor Pullinger: Design and business
+Ralph Hertz: Design and business
+Victor Zhong: iOS developer
+Vincent Tu: Algorithm developer
