@@ -27,6 +27,11 @@ _Note: Running the full, mobile version of this app requires that the iOS app is
 - To see how the autocompletion server runs without using an iOS device, simply start the server with `python minimalRESTAPI.py` and, in a separate terminal window execute `curl -X POST -d *"YOUR SENTENCE FRAGMENT HERE"* http://157.245.196.85:5002/predict`
 
 ---
+## How to run (from a docker image)
+
+- The server code (with required dependencies) is available at https://hub.docker.com/r/jborrel00/project-ummm
+
+---
 ## Dependencies
 
 - As best as possible, running pip install -r requirements.txt will install all required dependencies on a system
